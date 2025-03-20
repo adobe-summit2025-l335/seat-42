@@ -6,9 +6,22 @@
 .hero {
   position: relative;
   padding: 40px 24px;
-  min-height: 300px;
+  min-height: 500px;
 }
 
+.hero:after{
+  content: "";
+  background: #4808b77b;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.hero + div{
+  position: relative;
+  z-index: 1;
+}
 .hero > div > div {
   margin-right: 33%;
 }
